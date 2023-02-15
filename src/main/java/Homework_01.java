@@ -29,5 +29,6 @@ public class Homework_01 {
         System.out.println("Середня продуктивність праці 3 інженера: " + avePro3 + "% відсртків від загальної кількості днів.");
 
         System.out.println("Всім дякую! Гароного дня ;)");
+        System.out.println("Дякую! :-)");
     }
 }
