@@ -28,6 +28,6 @@ public class Homework_01 {
         double avePro3 = (double) engineer3 / totalDays * 100;   // Середня продуктивність праці 3 інженера
         System.out.println("Середня продуктивність праці 3 інженера: " + avePro3 + "% відсртків від загальної кількості днів.");
 
-        System.out.println("Всім дякую! Гароного дня ;)");
+        System.out.println("Всім дякую!!! Гароного дня ;) ");
     }
 }
