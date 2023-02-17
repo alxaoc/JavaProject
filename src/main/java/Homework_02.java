@@ -4,5 +4,6 @@ public class Homework_02 {
 
 
         System.out.printf("In process...");
+        System.out.printf("In process...");
     }
 }
