@@ -37,7 +37,7 @@ public class Homework_02 {
         System.out.println("Значення у типі int: " + intValue2);
 
 
-        String result = String.format("%.5f", avg); // 5 знаків після крапкі, 9 загальна кількість сімволів
+        String result = String.format("%.9f", avg); // 9 знаків після крапки
         System.out.println(result);
 
         // тип long
