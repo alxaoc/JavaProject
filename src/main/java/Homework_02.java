@@ -28,12 +28,33 @@ public class Homework_02 {
         // Щоб перевести значення типу double у стрінгове значення, можна використати метод Double.toString().
         String strAvg = Double.toString(avg);
         System.out.println("Результат у стрінговому форматі: " + strAvg);
+
         // Використання методу Integer.parseInt()
         int intValue1 = Integer.parseInt(strAvg.substring(0, strAvg.indexOf('.')));
         System.out.println("Значення у типі int: " + intValue1);
         // Використання методу Double.intValue()
         int intValue2 = (int) avg;
         System.out.println("Значення у типі int: " + intValue2);
+
+
+        String result = String.format("%.5f", avg); // 5 знаків після крапкі, 9 загальна кількість сімволів
+        System.out.println(result);
+
+        // тип long
+        double doub = Double.parseDouble(result.replaceAll("[^0-9.,]+", "").replace(',', '.'));
+        System.out.println("Значення у типі double: " + doub); //тип даних double
+
+        long longValue = (long) (doub * 1_000_000_000); // множимо на 10^9 для зберігання 9 знаків після коми
+        System.out.println("Значення у типі long: " + longValue);
+
+        // перевірка результату
+        double doubleValue = (double) longValue / 1_000_000_000;
+        System.out.println("Перевірка: " + doubleValue);
+
+        String strValue = Long.toString(longValue);
+        System.out.println("Значення у типі String: " + strValue);
+
+
 
 
 
